@@ -6,3 +6,4 @@ Bill Splicer is a Web Application that was developed for the final project of CS
 ## Instructions
 
 ## Developer
+- Developed by
