@@ -1,4 +1,4 @@
-# Bill_Splicer
+# Bill_Slicer
 
 ## Description
 Bill Splicer is a Web Application that was developed for the final project of CS50 Intro To Computer Science.
