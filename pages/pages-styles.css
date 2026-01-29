@@ -1,0 +1,363 @@
+
+/* Body of index page */
+body {
+  background-color: skyblue;
+}
+
+
+/* Design back link button */
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  display: inline-block;
+  padding: 10px 24px;
+
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 999px;      /* makes the pill shape */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: normal;
+
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.back-link::before {
+  content: "←";
+  margin-right: 8px;
+}
+
+.back-link:hover {
+  background-color: #45A049;
+  transform: translateY(-2px);
+}
+
+.back-link:active {
+  transform: translateY(0px);
+}
+
+
+/* handles centering */
+.center-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* original block styling */
+.block {
+  background-color: white;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 50px;
+  padding-bottom: 150px;
+  max-width: 800px;
+  width: 100%;         /* prevents shrinking */
+}
+
+
+/* Decorate h1 (title) */
+h1 {
+  background-color: darkorange;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 50px;
+  font-style: normal;
+}
+
+
+/* Decorating Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #f9f9f9;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+form label {          /* Size of question */
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input {          /* Size of input from users */
+  padding: 12px 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 20px;
+  outline: none;
+  width: 92%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76,175,80,0.3);
+}
+
+form button {       /* Submit button styling */
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #43A047;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0px);
+}
+
+
+/* Evenly & Differently output design */
+#evenly_answer, #update_check {
+  font-weight: 600;
+  width: 70%;
+  margin: auto;
+
+  background: #ffffff;
+  padding: 20px 25px;
+  margin-top: 50px;
+
+  border-radius: 18px;
+  border: 2px solid #ddd;
+
+  font-size: 25px;
+  color: #333;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  min-height: 40px;
+
+  /* Center content */
+  display: none;      /* Hidden at start */
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  text-align: center;      /* In case text wraps */
+}
+
+
+
+/* ADD MORE STYLES TO DIFFERENTLY */
+#itemsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #f9f9f9;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#itemsSection label {          /* Size of question */
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+#itemsSection input {          /* Size of input from users */
+  padding: 12px 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 20px;
+  outline: none;
+  width: 38%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#itemsSection input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76,175,80,0.3);
+}
+
+#itemsSection button {       /* + button styling */
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#itemsSection button:hover {
+  background-color: #43A047;
+  transform: translateY(-2px);
+}
+
+#itemsSection button:active {
+  transform: translateY(0px);
+}
+
+#itemsSection button.remove_Btn {     /* Styling Remove Buttons */
+  background-color: #e53935;
+  color: white;
+}
+
+#itemsSection button.remove_Btn:hover {
+  background-color: darkred;
+}
+
+
+/* table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden; /* keeps rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 18px;
+}
+
+td:nth-child(2),        /* takes the 2nd child of the table, and aligns it */
+th:nth-child(2),
+td:nth-child(3),
+th:nth-child(3) {
+  text-align: center;
+}
+
+thead {
+  background-color: skyblue;
+  color: white;
+}
+
+th {
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+#partyTable {           /* party table */
+  max-width: 400px;
+  margin: auto;
+}
+
+.person-block table {     /* person item table */
+  margin-top: 10px;
+}
+
+.person-block th {
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 600px) { /* Mobile friendly */
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+/* Underline h2 "Enter each person's items:" */
+h2 {
+  text-decoration: underline;
+}
+
+
+/* Submit button */
+#itemsSection #submit {
+  /* reset icon-button sizing */
+  width: 100%;
+  height: auto;
+  padding: 14px 32px;
+
+  /* center text perfectly */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* visual style */
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 999px;
+
+  background-color: #4CAF50;
+  color: white;
+
+  align-self: center; /* centers button in the column */
+}
+
+#itemsSection #submit:hover {
+  background-color: #43A047;
+  transform: translateY(-2px);
+}
+
+#itemsSection #submit:active {
+  transform: translateY(0px);
+}
+
+
+/* errors and output centering below submit button */
+#ty_payer, #submit_check {
+  text-align: center;
+}
+
+
+/* Coloring last output table to be orange */
+#submitTable thead {
+  background-color: darkorange;
+}

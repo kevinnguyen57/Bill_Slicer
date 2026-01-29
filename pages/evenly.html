@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+        <link href="pages-styles.css" rel="stylesheet">
+        <title>Bill Slicer: Evenly</title>
+    </head>
+    <body>
+
+        <!-- If Users selected the wrong link, they can go back -->
+        <a class="back-link" href="../index.html">back</a>
+
+        <div class="center-wrapper">
+            <div class="block">
+                <!-- Show title of project -->
+                <h1>Bill Slicer: Evenly</h1>
+
+                <form>
+                    <!-- Ask User for amount of people, users can only choose from 1 to 100 -->
+                    <label for="people">How many people: </label>
+                    <input id="people" type="number" step="1" min="1" required><br><br>
+
+                    <!-- Ask the User the name of the person who paid -->
+                    <label for="who">Name of person who paid: </label>
+                    <input id="who" type="text" placeholder="Not Required" autocomplete="off"><br><br>
+
+                    <!-- Ask User for total (not including tip) -->
+                    <label for="total">How much was the total: $</label>
+                    <input id="total" type="text" placeholder="Enter total" pattern='^\d+(?:\.\d{2})$' required autocomplete="off"/>
+                    <br><br>
+
+                    <!-- Ask User for Tip -->
+                    <label for="tip">How much was gratuity: $</label>
+                    <input id="tip" type="text" placeholder="Enter Tip" pattern='^\d+(?:\.\d{2})$' required autocomplete="off"/>
+                    <br><br>
+
+                    <!-- Create button to submit this form once all questions are completed -->
+                    <button onclick="submitForm_Evenly()">Submit</button>
+                </form>
+
+                <p id="evenly_answer"></p>
+            </div>
+        </div>
+
+        <!-- Connect js file to html file -->
+         <script src="pages-scripts.js"></script>
+    </body>
+</html>

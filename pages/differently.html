@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+        <link href="pages-styles.css" rel="stylesheet">
+        <title>Bill Slicer: Differently</title>
+    </head>
+    <body>
+        <!-- If Users selected the wrong link, they can go back -->
+        <a class="back-link" href="../index.html">back</a>
+
+        <div class="center-wrapper">
+            <div class="block">
+                <!-- Show title of project -->
+                <h1>Bill Slicer: Differently</h1>
+
+                <form>
+                    <!-- Ask the User the name of the person who paid -->
+                    <label for="who"><b>Name</b> of person who paid: </label>
+                    <input id="who" type="text" placeholder="Not Required" autocomplete="off"><br><br>
+
+                    <!-- Ask User for total (not including tax nor tip) -->
+                    <label for="subtotal">How much was the <b>Subtotal</b>: $</label>
+                    <input id="subtotal" type="text" placeholder="Enter Total" pattern='^\d+(?:\.\d{2})$' required autocomplete="off">
+                    <br><br>
+
+                    <!-- Ask User for tax -->
+                    <label for="tax">How much was <b>Taxed</b>: $</label>
+                    <input id="tax" type="text" placeholder="Enter Tax" pattern='^\d+(?:\.\d{2})$' required autocomplete="off">
+                    <br><br>
+
+                    <!-- Ask User for Tip -->
+                    <label for="tip">How much was <b>Gratuity</b>: $</label>
+                    <input id="tip" type="text" placeholder="Enter Tip" pattern='^\d+(?:\.\d{2})$' required autocomplete="off">
+                    <br><br>
+
+                    <!-- Create button to submit this form once all questions are completed -->
+                    <button id="firstBtn" onclick="updateForm_Differently()">Submit</button>
+                </form>
+
+                <p id="update_check"></p>
+
+                <!-- after the submit button, show all tables for names and party size -->
+                <div id="itemsSection" style="display:none;">
+                    <table id="partyTable" border="1">
+                        <thead>
+                            <tr>
+                                <th>Total Amount:</th>
+                                <th>Party Size:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="total">0</th>
+                                <th id="partySize">0</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+                    <!-- Let User input each persons name by having a plus button -->
+                    <label for="nameInput">Name of each person:</label><br>
+                    <input type="text" id="nameInput" placeholder="Name">
+                    <button id="addNameBtn">+</button>
+
+                    <br><br>
+
+                    <table id="personTable" border="1">
+                        <thead>
+                            <tr>
+                                <th>People in Party</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="personName">
+                        </tbody>
+                    </table>
+
+                    <!-- my per person item input here -->
+                    <h2>Enter each person's items:</h2>
+                    <div id="personItemsContainer"></div>
+
+                    <br><br>
+
+                    <!-- Submit button to output what each person owes -->
+                    <button id="submit" onclick="submitForm_Differently(event)">Submit</button>
+                    <p id="ty_payer"></p>
+                    <p id="submit_check"></p>
+                </div>
+
+                <!-- Create output when submit is clicked. show what everyone owes-->
+                <div id="submitSection" style="display:none;">
+                    <table id="submitTable" border="1">
+                        <thead>
+                            <tr>
+                                <th>People in Party</th>
+                                <th>Items Total</th>
+                                <th>Amount Owed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="submitOwed">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Connect js file to html file -->
+         <script src="pages-scripts.js"></script>
+
+    </body>
+</html>
