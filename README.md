@@ -29,7 +29,7 @@ left for users to go back to the main page if needed. The title is at the top mi
 button at the bottom of the page. When users submit, there will be another container that will display only once submited. This container
 will show the results of how much each person should pay if it were to be split EVENLY
 
-##### differently.html
+### differently.html
 
 When users click on "Differently" on the main page, they get sent to this page. This page is simialr to evenly where users enter their receipt
 information like a form. However, since we are splitting the bill depending on what each person ordered, we have to do more than what we had
