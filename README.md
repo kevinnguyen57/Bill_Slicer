@@ -1,6 +1,6 @@
 
 # Bill Slicer
-#### Video Demo:  https://www.youtube.com/watch?v=6VlOuDvJ3yA
+
 #### Description:
 
 Bill Splicer is a Web Application that anyone can find extremely useful - especially when eating out with a group of people.
