@@ -14,7 +14,7 @@ This Web App will successful tell you what each person owes without having to do
 The main page of my website. Shows the title of the project and two links that sends you to evenly.html page and differently.html page.
 I also used a Google font which is in the header to make the website look neat
 
-##### style.css
+### style.css
 
 Styles index.html. The body background is skyblue, and everything in the body is wrapped in a div to make it a container. This container
 is locked into the middle with a white background, holding the title and the two links. We also style the title and links to look like
