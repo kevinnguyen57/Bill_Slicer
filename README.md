@@ -21,7 +21,7 @@ is locked into the middle with a white background, holding the title and the two
 buttons which can be interacted with. Since we added the google font embed link to header (in index.html) we can use it in css to specify
 which tag, id, or class gets the font
 
-##### evenly.html
+### evenly.html
 
 When users click on "Evenly" on the main page, they get sent to this page. This page let users enter their receipt information like a form.
 Users can input their name, number of people (required), total (required), and tip (required). This html file has a back button at the top
