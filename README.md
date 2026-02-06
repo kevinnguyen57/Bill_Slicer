@@ -1,7 +1,7 @@
 
 # Bill Slicer
 
-#### Description:
+## Description:
 
 Bill Splicer is a Web Application that anyone can find extremely useful - especially when eating out with a group of people.
 Every time one person pays for any of our meals, and we need to pay them back, someone has to do the math which could sometimes
@@ -9,7 +9,7 @@ be overwhelming or tedious in certain situations such as, people ordering differ
 giving two options on how the bill should be split. One, split evenly - or two, split differently per what each person ordered.
 This Web App will successful tell you what each person owes without having to do the math yourself!
 
-##### index.html
+### index.html
 
 The main page of my website. Shows the title of the project and two links that sends you to evenly.html page and differently.html page.
 I also used a Google font which is in the header to make the website look neat
