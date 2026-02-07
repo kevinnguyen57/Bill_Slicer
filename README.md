@@ -56,7 +56,7 @@ specific person. Again, the new item table for each person needs to be of correc
 and the JS file will take all the information and calculate each person's table item in a loop to add up the total and add tax and tip divided by the
 amound of people to splite evenly. The JS file will create another table that shows each name and how much they owe correctly
 
-##### pages-styles.css
+### pages-styles.css
 
 This css file designs evenly and differently html files. Since they are similar (with the first part), it works for both files. The first part of the code
 is for evenly.html and the second part is for differently.html (similar to the JS file). It has the back link for each file, and its animation to make the
