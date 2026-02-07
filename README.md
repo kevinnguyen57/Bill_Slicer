@@ -41,7 +41,7 @@ table is created, which is where users can input what that person ordered specif
 any names, they can remove names they've inputted. After filling out all information, there's another submit button at the bottom where it will
 output the results of what everyone owes.
 
-##### pages-script.js
+### pages-script.js
 
 I connected evenly.html and differently.html to one js file (this one) which I could've had separate files for them but I just chose to keep them
 in one file for easier accessiblility. The JS file allows evenly.html to calculate the results given from the user. We calculate the total and
