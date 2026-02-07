@@ -69,4 +69,3 @@ specifying the id of that button to override the child styling. I had to do the 
 I made the first table that shows party size and total to be light blue (th) and the items table dark gray (th). And finally for the last table, I made the
 header orange to match the title background color.
 
-There's a lot of code and I definitely can add more to tackle more situations like what if some people share items etc. 
