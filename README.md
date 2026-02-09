@@ -1,6 +1,9 @@
 
 # Bill Slicer
 
+## Website Gitpages:
+https://kevinnguyen57.github.io/Bill_Slicer/
+
 ## Description:
 
 Bill Splicer is a Web Application that anyone can find extremely useful - especially when eating out with a group of people.
