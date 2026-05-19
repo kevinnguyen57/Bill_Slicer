@@ -73,3 +73,5 @@ I made the first table that shows party size and total to be light blue (th) and
 header orange to match the title background color.
 
 ### ERROR UPDATE
+
+Issues: 
