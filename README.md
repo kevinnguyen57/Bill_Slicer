@@ -76,3 +76,6 @@ header orange to match the title background color.
 
 Issues: 
     - Differently does not calculate Items Total
+
+Current Program:
+    - Bill Slicer 1.0
