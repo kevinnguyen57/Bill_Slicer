@@ -75,3 +75,4 @@ header orange to match the title background color.
 ### ERROR UPDATE
 
 Issues: 
+    - Differently does not calculate Items Total
