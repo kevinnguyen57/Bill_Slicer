@@ -74,6 +74,8 @@ header orange to match the title background color.
 
 ### ERROR UPDATE
 
+Bill Slicer is not a perfect application. There will be errors and issues to solve.
+
 Issues: 
     - Differently does not calculate Items Total
 
