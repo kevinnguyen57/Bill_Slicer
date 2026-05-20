@@ -307,7 +307,7 @@ function submitForm_Differently(event) {
         const itemTbody = document.getElementById(`itemBody-${personName}`);
         let itemTotal = 0;  // start total at 0 to sum up the total at the end
 
-        if (itemTbody) {    // if the person's item table if not empty
+        if (itemTbody) {    // if the person's item table is not empty
             // Loop through each row and sum the prices
             for (const itemRow of itemTbody.rows) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
