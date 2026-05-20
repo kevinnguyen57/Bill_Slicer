@@ -311,7 +311,10 @@ function submitForm_Differently(event) {
             // Loop through each row and sum the prices
             for (const itemRow of itemTbody.rows) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
-                let price = parseFloat(priceCell.textContent.replace('$', '')); // removes '$' so we can calculate the total
+                // let price = parseFloat(priceCell.textContent.replace('$', ''));
+                let price = parseFloat(
+                    priceCell.textContent.replace(/[$,\s]/g, '')
+                );  // removes '$' so we can calculate the total
                 if (!isNaN(price)) itemTotal += price;  // If price is a number, we add it to total
             }
         }
