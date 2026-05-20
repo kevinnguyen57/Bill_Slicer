@@ -311,6 +311,9 @@ function submitForm_Differently(event) {
             // Loop through each row and sum the prices
             for (const itemRow of itemTbody.rows) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
+                
+                if (!priceCell) continue;
+                
                 // let price = parseFloat(priceCell.textContent.replace('$', ''));
                 let price = parseFloat(
                     priceCell.textContent.replace(/[$,\s]/g, '')
