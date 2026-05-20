@@ -304,7 +304,7 @@ function submitForm_Differently(event) {
         const personName = r.cells[0].textContent;
 
         // Find the person's item table suing the name we just grabbed
-        const itemTbody = document.getElementById(`itemBody-${personName}`);
+        const itemTbody = document.getElementById(`itemBody-${personName}`); // new might have to change
         let itemTotal = 0;  // start total at 0 to sum up the total at the end
 
         if (itemTbody) {    // if the person's item table is not empty
