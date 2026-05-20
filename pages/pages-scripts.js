@@ -313,11 +313,15 @@ function submitForm_Differently(event) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
                 
                 if (!priceCell) continue;
-                
+
+                console.log("Raw price:", priceCell.textContent);
+
                 // let price = parseFloat(priceCell.textContent.replace('$', ''));
                 let price = parseFloat(
                     priceCell.textContent.replace(/[$,\s]/g, '')
                 );  // removes '$' so we can calculate the total
+
+                console.log 
                 if (!isNaN(price)) itemTotal += price;  // If price is a number, we add it to total
             }
         }
