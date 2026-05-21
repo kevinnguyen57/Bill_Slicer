@@ -303,52 +303,33 @@ function submitForm_Differently(event) {
         // personName grabs the name of the current row from personName table
         const personName = r.cells[0].textContent.trim();
 
-        console.log("PERSON:", personName); // Test
+        // console.log("PERSON:", personName); // Test
 
         // Find the person's item table suing the name we just grabbed
         const itemTbody = document.getElementById(`itemBody-${personName}`); // new might have to change
 
-        console.log("TABLE FOUND:", itemTbody); // Test
+        // console.log("TABLE FOUND:", itemTbody); // Test
 
         let itemTotal = 0;  // start total at 0 to sum up the total at the end
 
         if (itemTbody) {    // if the person's item table is not empty
-            /* // Loop through each row and sum the prices
+            // Loop through each row and sum the prices
             for (const itemRow of itemTbody.rows) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
                 
                 if (!priceCell) continue; // new
 
-                console.log("Raw price:", priceCell.textContent); // new
+                // console.log("Raw price:", priceCell.textContent); // new
 
                 // let price = parseFloat(priceCell.textContent.replace('$', ''));
                 let price = parseFloat(
                     priceCell.textContent.replace(/[$,\s]/g, '')
                 );  // removes '$' so we can calculate the total
 
-                console.log("Parsed:", price); // new
+                // console.log("Parsed:", price); // new
 
                 if (!isNaN(price)) {
                     itemTotal += price;  // If price is a number, we add it to total
-                }
-            } TEST */
-            console.log("ROWS:", itemTbody.rows.length);
-
-            for (const itemRow of itemTbody.rows) {
-                console.log("ROW HTML:", itemRow.innerHTML);
-
-                const priceCell = itemRow.cells[1];
-
-                console.log("PRICE CELL:", priceCell?.textContent);
-
-                const price = parseFloat(
-                    priceCell.textContent.replace(/[$,\s]/g, '')
-                );
-
-                console.log("PARSED PRICE:", price);
-
-                if (!isNaN(price)) {
-                    itemTotal += price;
                 }
             }
         }
