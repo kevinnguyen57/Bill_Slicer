@@ -301,7 +301,7 @@ function submitForm_Differently(event) {
     // Loop through all rows in the table
     for (const r of tbody.rows) {
         // personName grabs the name of the current row from personName table
-        const personName = r.cells[0].textContent;
+        const personName = r.cells[0].textContent.trim();
 
         // Find the person's item table suing the name we just grabbed
         const itemTbody = document.getElementById(`itemBody-${personName}`); // new might have to change
