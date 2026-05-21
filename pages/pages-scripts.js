@@ -303,6 +303,8 @@ function submitForm_Differently(event) {
         // personName grabs the name of the current row from personName table
         const personName = r.cells[0].textContent.trim();
 
+        console.log("PERSON:", personName); // Test
+
         // Find the person's item table suing the name we just grabbed
         const itemTbody = document.getElementById(`itemBody-${personName}`); // new might have to change
         let itemTotal = 0;  // start total at 0 to sum up the total at the end
