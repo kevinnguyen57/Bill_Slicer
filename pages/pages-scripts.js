@@ -332,6 +332,15 @@ function submitForm_Differently(event) {
                     itemTotal += price;  // If price is a number, we add it to total
                 }
             } TEST */
+            console.log("ROWS:", itemTbody.rows.length);
+
+            for (const itemRow of itemTbody.rows) {
+                console.log("ROW HTML:", itemRow.innerHTML);
+
+                const priceCell = itemRow.cells[1];
+
+                console.log("PRICE CELL:", priceCell?.textContent);
+            }
         }
 
         let totalOwed = itemTotal + tax_tip_split;
