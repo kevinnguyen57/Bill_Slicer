@@ -310,7 +310,7 @@ function submitForm_Differently(event) {
 
         console.log("TABLE FOUND:", itemTbody); // Test
 
-        // let itemTotal = 0;  // start total at 0 to sum up the total at the end
+        let itemTotal = 0;  // start total at 0 to sum up the total at the end
 
         if (itemTbody) {    // if the person's item table is not empty
             /* // Loop through each row and sum the prices
@@ -340,6 +340,16 @@ function submitForm_Differently(event) {
                 const priceCell = itemRow.cells[1];
 
                 console.log("PRICE CELL:", priceCell?.textContent);
+
+                const price = parseFloat(
+                    priceCell.textContent.replace(/[$,\s]/g, '')
+                );
+
+                console.log("PARSED PRICE:", price);
+
+                if (!isNaN(price)) {
+                    itemTotal += price;
+                }
             }
         }
 
