@@ -310,10 +310,10 @@ function submitForm_Differently(event) {
 
         console.log("TABLE FOUND:", itemTbody); // Test
 
-        let itemTotal = 0;  // start total at 0 to sum up the total at the end
+        // let itemTotal = 0;  // start total at 0 to sum up the total at the end
 
         if (itemTbody) {    // if the person's item table is not empty
-            // Loop through each row and sum the prices
+            /* // Loop through each row and sum the prices
             for (const itemRow of itemTbody.rows) {
                 const priceCell = itemRow.cells[1]; // Price is in the 2nd column
                 
@@ -331,7 +331,7 @@ function submitForm_Differently(event) {
                 if (!isNaN(price)) {
                     itemTotal += price;  // If price is a number, we add it to total
                 }
-            }
+            } TEST */
         }
 
         let totalOwed = itemTotal + tax_tip_split;
